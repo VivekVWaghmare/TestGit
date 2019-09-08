@@ -1,0 +1,60 @@
+git branch
+	to view branches in git repository
+
+git branch -a | --all
+	to view both remote tracking branches and local branches(repository).
+
+git branch -r | --remote 
+	to view remote branches
+
+git checkout BRANCH-NAME
+	to checkout existing branch
+
+git branch NEW-BRANCH-NAME
+	to create new branch (to switch to newly created branch run git checkout NEW-BRANCH-NAME)
+
+git checkout -b NEW-BRANCH-NAME
+	to create NEW-BRANCH-NAME and switch to NEW-BRANCH-NAME wiht single command
+
+git push -u origin NEW-BRANCH-NAME
+	push branch to remote repository
+
+git branch -m | --move OLD-BRANCH-NAME NEW-BRANCH-NAME
+	to rename branch 
+
+git branch -d | --delete BRANCH-TO-DELETE
+	delete branch, will throw an error if the changes in the branch you’re trying to delete are not fully merged into the current branch
+
+git branch -D BRANCH-TO-DELETE
+git branch -d --force BRANCH-TO-DELETE
+git branch -delete --force BRANCH-TO-DELETE
+	force delete branch
+
+git diff FIRST-BRANCH..SECOND-BRANCH
+	compare two branches
+
+git branch --merged
+	list of all branches that are merged into your branch
+
+
+UPDATE BRANCH FROM REMOTE
+git stash
+	save local changes which are different from remote repository
+git checkout my_local_branch
+	switch to branch you want to work on
+git pull
+	pull from remote branch
+
+
+git branch --set-upstream-to origin/BRANCH
+	if you have a branch and you want to track remote branch set-upstream-to
+
+git push -u origin BRANCH
+	use -u (upstream) flag when you make your first push
+
+
+TO CHECK HELP RELATED TO BRANCH
+git help branch
+git branch --help
+
+	
